@@ -525,6 +525,7 @@
 
     <h3>{{ _('What is a Featured add-on?') }}</h3>
     <p>
+      {% trans %}
         The main page of AMO as well as the main page for each category
         contain three slots which are used to display a set of Featured
         Add-Ons. These add-ons are pulled from the Recommended and Category
@@ -533,11 +534,14 @@
         add-ons a chance for increased visibility to users. Featured add-ons are
         rotated regularly to
         prevent staleness.
+      {% endtrans %}
     </p>
 
     <h3>{{ _('How can my add-on be listed as Recommended?') }}</h3>
     <p>
-      <a href="{{ url('devhub.docs', 'policies', 'recommended') }}">This page</a> describes the process by which the Recommended lists are managed.
+      {% trans %}
+        <a href="{{ url('devhub.docs', 'policies', 'recommended') }}">This page</a> describes the process by which the Recommended lists are managed.
+      {% endtrans %}
     </p>
 
     <h3>{{ _('Can I pay to have my add-on listed as Recommended?') }}</h3>
@@ -545,7 +549,9 @@
 
     <h3>{{ _('Why is my add-on no longer listed as Recommended?') }}</h3>
     <p>
-      <a href="{{ url('devhub.docs', 'policies', 'recommended') }}">This page</a> describes the process by which the Recommended lists are managed.
+      {% trans %}
+        <a href="{{ url('devhub.docs', 'policies', 'recommended') }}">This page</a> describes the process by which the Recommended lists are managed.
+      {% endtrans %}
     </p>
 
     <h2 id="user-reviews">{{ _('User Reviews') }}</h2>
